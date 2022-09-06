@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Page</title>
+	<style type="text/css">
+		label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+
+      }
+      div {
+        margin-bottom: 10px;
+      }
+	</style>
+</head>
+<body>
+	<div style="text-align: center; font-size: 30px;background-color: gray; width: 50%; margin: auto;">Update your details</div>
+	<form name="login" action="/studentdetails.html">
+	<div style="text-align: center; margin-top: 20px;">
+		<label>First Name:</label>&nbsp;&nbsp;<input type="text" name="fname"  value="Sakthivel" required></input><br ><br>
+		<label>Last Name: </label>&nbsp;&nbsp;<input type="text" name="lname"  value="Palanisamy" required></input><br ><br>
+		<label>Email ID: </label>&nbsp;&nbsp;<input type="text" name="email"  value="test@test.com" required></input><br ><br>
+		<label>Primary Phone No: </label>&nbsp;&nbsp;<input type="text" name="phone"  value="1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"  maxlength="10" required></input><br><br>
+		<label>Alternate Phone No: </label>&nbsp;&nbsp;<input type="text" name="altphone"   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"  maxlength="10"></input><br><br>
+		<label>Whatsapp Phone No: </label>&nbsp;&nbsp;<input type="text" name="whatsappphone"   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"  maxlength="10" required></input><br><br>
+		<label>Roll No: </label>&nbsp;&nbsp;<input type="text" name="rollno"   required></input><br ><br>
+		<label>Gender: </label>&nbsp;&nbsp;
+		<select>
+			<option value="">Select the Gender</option>
+			<option value="1">Male</option>
+			<option value="2">Female</option>
+			<option value="3">Other</option>
+		</select>
+		<br><br>
+		<label>Date of Birth:</label>&nbsp;&nbsp;<input type="date" name=""></input><br><br>
+		
+		<label>Department:</label>&nbsp;&nbsp;
+		<select>
+			<option value="">Select your department</option>
+			<option value="1">CSE</option>
+			<option value="2">IT</option>
+			<option value="3">EEE</option>
+		</select>
+		<br><br>
+		<label>Are you a hosteller:</label>&nbsp;&nbsp;
+		<input type="radio" name="hosteller" value="1">Yes</input>
+		<input type="radio" name="hosteller" value="0">No</input><br><br>
+
+		<label> Batch:</label>&nbsp;&nbsp;
+		<select style="width:100px">
+			<option value="">Select the batch</option>
+			<option value="2020">2020</option>
+			<option value="2021">2021</option>
+			<option value="2022">2022</option>
+		</select><br><br>
+
+		<label> Street:</label>&nbsp;&nbsp;<input type="text" name="street"></<input><br><br>
+		<label> City:</label>&nbsp;&nbsp;<input type="text" name="city"></<input><br><br>
+		<label> Pincode:</label>&nbsp;&nbsp;<input type="text" name="pincode"></<input><br><br>
+		<label>State:</label>&nbsp;&nbsp;
+		<select>
+			<option value="">Select the state</option>
+			<option value="tamilnadu">Tamilnadu</option>
+			<option value="kerela">Kerala</option>
+		</select><br><br>	
+		<label>Country:</label>&nbsp;&nbsp;
+		<select>
+			<option value="">Select the Country</option>
+			<option value="india">India</option>
+			<option value="us">US</option>
+		</select><br><br>	
+
+		<button name="submit" value="submit" style="border-color: skyblue; background-color:blue;">Update</button>
+
+	</div>
+	</form>
+	
+</body>
+</html>
